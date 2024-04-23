@@ -21,40 +21,44 @@ durham_2019_white = get_acs(geography = "county",
                        year = 2019,
                        state = "NC",
                        county = "Durham County",
-                       table = variables
+                       table = variables,
+                       survey = "acs1"
                       )
 
-durham_2020_white = get_acs(geography = "county",
-                       year = 2020,
-                       state = "NC",
-                       county = "Durham County",
-                       table = variables
-                      )
+#durham_2020_white = get_acs(geography = "county",
+                       #year = 2020,
+                       #state = "NC",
+                       #county = "Durham County",
+                       #table = variables,
+                       #survey = "acs1"
+                      #)
 
 durham_2021_white = get_acs(geography = "county",
                        year = 2021,
                        state = "NC",
                        county = "Durham County",
-                       table = variables
+                       table = variables,
+                       survey = "acs1"
                       )
 
 durham_2022_white = get_acs(geography = "county",
                        year = 2022,
                        state = "NC",
                        county = "Durham County",
-                       table = variables
+                       table = variables,
+                       survey = "acs1"
                       )
 
 #Adding a column to specify year for each row
 durham_2019_white = durham_2019_white %>% mutate(year = 2019)
-durham_2020_white = durham_2020_white %>% mutate(year = 2020)
+#durham_2020_white = durham_2020_white %>% mutate(year = 2020)
 durham_2021_white = durham_2021_white %>% mutate(year = 2021)
 durham_2022_white = durham_2022_white %>% mutate(year = 2022)
 
 #Mutating variables so that they are understood in plain English
 durham_2019_white = durham_2019_white %>% mutate(variable = recode(variable, B25003A_001 = "total",  B25003A_002 = "owner_occupied", B25003A_003 = "renter_occupied"))
 
-durham_2020_white = durham_2020_white %>% mutate(variable = recode(variable, B25003A_001 = "total",  B25003A_002 = "owner_occupied", B25003A_003 = "renter_occupied"))
+#durham_2020_white = durham_2020_white %>% mutate(variable = recode(variable, B25003A_001 = "total",  B25003A_002 = "owner_occupied", B25003A_003 = "renter_occupied"))
 
 durham_2021_white = durham_2021_white %>% mutate(variable = recode(variable, B25003A_001 = "total",  B25003A_002 = "owner_occupied", B25003A_003 = "renter_occupied"))
                                                  
@@ -62,20 +66,20 @@ durham_2022_white = durham_2022_white %>% mutate(variable = recode(variable, B25
 
 #Adding variable to specify for race
 durham_2019_white = durham_2019_white %>% mutate(race = "white")
-durham_2020_white = durham_2020_white %>% mutate(race = "white")
+#durham_2020_white = durham_2020_white %>% mutate(race = "white")
 durham_2021_white = durham_2021_white %>% mutate(race = "white")
 durham_2022_white = durham_2022_white %>% mutate(race = "white")
 
 #Adding a variable to calculate ownership rate for each year 
 durham_2019_white = durham_2019_white %>% mutate(pct = (estimate/69535)*100)
-durham_2020_white = durham_2020_white %>% mutate(pct = (estimate/70680)*100)
+#durham_2020_white = durham_2020_white %>% mutate(pct = (estimate/70680)*100)
 durham_2021_white = durham_2021_white %>% mutate(pct = (estimate/70203)*100)
 durham_2022_white = durham_2022_white %>% mutate(pct = (estimate/70732)*100)
 
 
 #Calling tables
 durham_2019_white
-durham_2020_white
+#durham_2020_white
 durham_2021_white
 durham_2022_white
 ```
@@ -91,40 +95,44 @@ durham_2019_black = get_acs(geography = "county",
                        year = 2019,
                        state = "NC",
                        county = "Durham County",
-                       table = variables
+                       table = variables,
+                       survey = "acs1"
                       )
 
-durham_2020_black = get_acs(geography = "county",
-                       year = 2020,
-                       state = "NC",
-                       county = "Durham County",
-                       table = variables
-                      )
+#durham_2020_black = get_acs(geography = "county",
+                       #year = 2020,
+                       #state = "NC",
+                       #county = "Durham County",
+                       #table = variables,
+                       #survey = "acs1"
+                      #)
 
 durham_2021_black = get_acs(geography = "county",
                        year = 2021,
                        state = "NC",
                        county = "Durham County",
-                       table = variables
+                       table = variables,
+                       survey = "acs1"
                       )
 
 durham_2022_black = get_acs(geography = "county",
                        year = 2022,
                        state = "NC",
                        county = "Durham County",
-                       table = variables
+                       table = variables,
+                       survey = "acs1"
                       )
 
 #Adding a column to specify year for each row
 durham_2019_black = durham_2019_black %>% mutate(year = 2019)
-durham_2020_black = durham_2020_black %>% mutate(year = 2020)
+#durham_2020_black = durham_2020_black %>% mutate(year = 2020)
 durham_2021_black = durham_2021_black %>% mutate(year = 2021)
 durham_2022_black = durham_2022_black %>% mutate(year = 2022)
 
 #Mutating variables so that they are understood in plain English
 durham_2019_black = durham_2019_black %>% mutate(variable = recode(variable, B25003B_001 = "total",  B25003B_002 = "owner_occupied", B25003B_003 = "renter_occupied"))
 
-durham_2020_black = durham_2020_black %>% mutate(variable = recode(variable, B25003B_001 = "total",  B25003B_002 = "owner_occupied", B25003B_003 = "renter_occupied"))
+#durham_2020_black = durham_2020_black %>% mutate(variable = recode(variable, B25003B_001 = "total",  B25003B_002 = "owner_occupied", B25003B_003 = "renter_occupied"))
 
 durham_2021_black = durham_2021_black %>% mutate(variable = recode(variable, B25003B_001 = "total",  B25003B_002 = "owner_occupied", B25003B_003 = "renter_occupied"))
                                                  
@@ -132,26 +140,30 @@ durham_2022_black = durham_2022_black %>% mutate(variable = recode(variable, B25
 
 #Adding variable to identify Black or white household
 durham_2019_black = durham_2019_black %>% mutate(race = "Black")
-durham_2020_black = durham_2020_black %>% mutate(race = "Black")
+#durham_2020_black = durham_2020_black %>% mutate(race = "Black")
 durham_2021_black = durham_2021_black %>% mutate(race = "Black")
 durham_2022_black = durham_2022_black %>% mutate(race = "Black")
 
 #Adding a variable to calculate ownership rate for each year (DP05 - Durham County, North Carolina, ACS 5-year)
 durham_2019_black = durham_2019_black %>% mutate(pct = (estimate/45246)*100)
-durham_2020_black = durham_2020_black %>% mutate(pct = (estimate/45428)*100)
+#durham_2020_black = durham_2020_black %>% mutate(pct = (estimate/45428)*100)
 durham_2021_black = durham_2021_black %>% mutate(pct = (estimate/45905)*100)
 durham_2022_black = durham_2022_black %>% mutate(pct = (estimate/45641)*100)
 
 #Adding a variable to calculate ownership rate for each year - total population number pulled from Census for each year
 
 durham_2019_black
-durham_2020_black
+#durham_2020_black
 durham_2021_black
 durham_2022_black
 ```
 ```{r}
 #Making one big data frame
-all_durham = rbind(durham_2019_black, durham_2019_white, durham_2020_black, durham_2020_white, durham_2021_black, durham_2021_white, durham_2022_black, durham_2022_white)
+#all_durham = rbind(durham_2019_black, durham_2019_white, durham_2020_black, durham_2020_white, durham_2021_black, durham_2021_white, durham_2022_black, durham_2022_white)
+
+#all_durham
+
+all_durham = rbind(durham_2019_black, durham_2019_white, durham_2021_black, durham_2021_white, durham_2022_black, durham_2022_white)
 
 all_durham
 ```
@@ -185,19 +197,19 @@ little_ad = rbind(little_ad_white, little_ad_black)
 
 `2019` = little_ad %>% filter(year==2019)
 
-`2020` = little_ad %>% filter(year==2020)
+#`2020` = little_ad %>% filter(year==2020)
 
 `2021` = little_ad %>% filter(year==2021)
 
 `2022` = little_ad %>% filter(year==2022)
 
 difference_2019 = `2019`$pct[1]-`2019`$pct[2]
-difference_2020 = `2020`$pct[1]-`2020`$pct[2]
+#difference_2020 = `2020`$pct[1]-`2020`$pct[2]
 difference_2021 = `2021`$pct[1]-`2021`$pct[2]
 difference_2022 = `2022`$pct[1]-`2022`$pct[2]
 
 difference_2019
-difference_2020
+#difference_2020
 difference_2021
 difference_2022
 ```
