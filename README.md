@@ -5,3 +5,5 @@ This exploratory analysis uses 1-year American Community Survey data to confirm 
 Data used in this analysis was pulled from the Census Bureau API via tidycensus. All data points come from the 1-year American Community Surveys for each year in question. The specific tables that were referenced were `B25003A` (Tenure (White Alone Householder)) and `B25003B` (Tenure (Black or African American Alone Householder)). 
 
 Thanks to Warren Lowell at Duke University for suggesting a closer look at the 2023 Durham County CHA.
+
+![image](https://github.com/umaxbhat/Durham-Homeownership-Gap/assets/83524853/c1e6a897-8ff1-4e87-8da4-c07b438f8b23)
