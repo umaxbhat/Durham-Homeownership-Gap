@@ -4,6 +4,4 @@ This exploratory analysis uses 5-year American Community Survey data and 1-year 
 
 Data used in this analysis was pulled from the Census Bureau API via tidycensus. All data points come from the 5-year and 1-year American Community Surveys for the years in question. The specific tables that were referenced were `B25003A` (Tenure (White Alone Householder)) and `B25003B` (Tenure (Black or African American Alone Householder)).
 
-Results with 5-year ACS indicate that the trend identified in the most recent CHA report is not applicable on a broader scale. But results with 1-year ACS data — which does not include pooled data — substantiate the trend. 
-
 Thanks to Warren Lowell at Duke University for suggesting a closer look at the 2023 Durham County CHA.
