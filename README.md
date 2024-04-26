@@ -6,7 +6,5 @@ Data used in this analysis was pulled from the Census Bureau API via tidycensus.
 
 Thanks to Warren Lowell at Duke University for suggesting a closer look at the 2023 Durham County CHA.
 
-_
-
 ![image](https://github.com/umaxbhat/Durham-Homeownership-Gap/assets/83524853/c1e6a897-8ff1-4e87-8da4-c07b438f8b23) ![image](https://github.com/umaxbhat/Durham-Homeownership-Gap/assets/83524853/3731809b-3138-422d-973b-d8472c5c6d35)
 
